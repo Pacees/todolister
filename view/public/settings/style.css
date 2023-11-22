@@ -1,0 +1,86 @@
+*{
+    font-family: Pangolin , sans-serif;
+    padding: 0; margin: 0; 
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E6E6E6;
+}
+
+.navbar{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3a3a3b;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 70px;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+.navbar h3 {
+    font-weight: bolder;
+    cursor: default;
+}
+
+.navbar .links a {
+    margin-left: 25px;
+}
+
+table{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: #cfcfcf;
+}
+
+tr :nth-child(1){
+    padding: 5px 20px;
+}
+
+tr :nth-child(2){
+    padding: 5px 30px;
+}
+
+tr :nth-child(3){
+    padding: 5px 20px;
+}
+
+tr :nth-child(4){
+    padding: 5px 30px;
+}
+
+td a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+td a:hover {
+    opacity: 0.8;
+}
+
+#change-name {
+    padding: 5px 20px;
+}
+thead {
+    background-color: #3a3a3b;
+    color: white;
+}

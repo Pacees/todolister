@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <!-- Google Fonts Pangolin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body">
+    <div id="home-page-button-container">
+        <a href="/my-books" id="home-page-button"><i class="fa-solid fa-arrow-left-long"></i> Home Page</a>
+    </div>
+
+    <div class="bg">
+        <div class="container">
+            <h1 id="todo-header"></h1>
+
+            <div class="editor">
+                <form id="todo-form" name="form">
+                    <input type="text" name="todo" id="new-todo" maxlength="50" placeholder= "New Todo">
+                    <button type="submit" id="submit-button">+</button>
+                </form>
+
+                <button id="clear-all">Delete All</button>
+            </div>
+
+            <h3 id="list-title">Todos</h2>
+
+            <ul class="list">
+                <!-- <li class="list-item">
+                    <input type="text" class="todo-text">
+                    <div class="todo-buttons">
+                        <button class="complete-button"><i class="fa-solid fa-check"></i></button>
+                        <button class="edit-button"><i class="fa fa-pencil"></i></button>
+                        <button class="delete-button">x</button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+ 
+    <div class="creator"><a href="https://github.com/Pacees" target="_blank">by Pacees</a></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

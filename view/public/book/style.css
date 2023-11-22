@@ -1,0 +1,189 @@
+*{
+    font-family: Pangolin , sans-serif;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+background-color: #E6E6E6;
+}
+
+#home-page-button-container {
+
+    width: 780px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -330px;
+    margin-top: -437.5px;
+    z-index: 1;
+}
+
+#home-page-button {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+#home-page-button:hover {
+    opacity: 0.6;
+}
+
+.bg{
+    background-image: url(./../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+    width: 780px;
+    height: 875px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -390px;
+    margin-top: -437.5px;
+}
+
+.container{
+    padding-left: 120px;
+    padding-right: 80px;
+    padding-top: 40px;
+}
+
+.container h1{
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.editor{
+    display: flex;
+    position: relative;
+    bottom: 18px;
+    justify-content: space-between;
+}
+
+#todo-form{
+    display: flex;
+}
+
+#todo-form input{
+    width: 150px;
+    padding: 4px;
+    border: none;
+    border-bottom: 1px solid none;
+    background-color: transparent;
+    outline: none;
+}
+
+/* add button */
+
+#todo-form button {
+    bottom: 2px;
+    font-size: 18px;
+    transition: 0.2s;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#todo-form button:hover{
+    opacity: 0.5;
+}
+
+
+/* clear all button */
+
+#clear-all{
+    border: 1px solid black;
+    position: relative;
+    background-color: transparent;
+    border-radius: 5px;
+    bottom: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#clear-all:hover{
+    opacity: 0.5;
+}
+
+#list-title{
+    position: relative;
+    top: 5px;
+}
+
+.list{
+    padding-left: 0px;
+}
+
+.list-item{
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-buttons button{
+    font-size: 18px;
+    transition: 0.2s;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 3px;
+
+    transition: 0.4s;
+}
+
+/* save button */
+.todo-buttons .save-button {
+    font-size: 14px;
+    transition: 0.2s;
+    display: none;
+
+}
+.todo-buttons .save-button:hover {
+    opacity: 0.8;
+}
+
+.edit-button i , .delete-button i {
+    font-size: 14px;
+}
+
+.todo-text{
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.creator {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.creator a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.creator a:hover{
+    opacity: 0.5;
+}
+
+.completed input{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: 0.5s ;
+    pointer-events: none;
+}
+
+.completed .complete-button ,
+.completed .edit-button{
+    display: none;
+}
